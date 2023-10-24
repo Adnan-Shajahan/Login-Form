@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Login Form</title>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+		}
+
+        .half{
+      	    width: 50%;
+       	    height: 100%;
+            position: fixed;
+       	    background: linear-gradient(180deg, #efd5ff 0%, #515ada 100%);
+            left: 0%;
+        	top: 0%;
+
+        }
+        .form{
+        	width: 50%;
+        	height: 100%;
+        	position:fixed;
+        	text-align: left;
+        	left: 50%;
+        	top: 0%;
+        	padding: 15px;
+        	padding-top: 100px;
+        	text-align: left;
+        	padding: 100px 15px;
+        	border: 1px solid papayawhip;
+        
+        }
+                
+		[for="login"]{
+			color: orangered;
+			font-family: sans-serif;
+			font-style: helvetica;
+			font-style:aerial ;
+			font-size: 27px;
+		}
+		input{
+			color: black;
+			font-size: 13px;
+			
+		}
+		[type="submit"]{
+			border: none;
+			background-color: orangered;
+			color: whitesmoke;
+			width: 100%;
+			height: 38px;
+			display: inline-block;
+
+		}
+		[type="submit"]:hover{
+			cursor: pointer;
+			opacity: 0.8;
+
+		}
+		[type="email"], [type="password"] {
+			width: 100%;
+			height: 38px;
+			padding: 0px 15px;
+			display: inline-block;
+			background-color: #f1f1f1;
+			border: none;
+		}
+
+		[type="submit"], [type="email"],[type="password"]{
+			padding-left:15px ;
+			padding-right: 15px;
+		}
+
+		@media screen and(max-width:300px){
+			[type="email"], [type="password"] {
+				width: 100%;
+			}
+			[type="submit"]{
+				width: 100%;
+			}
+		}
+        
+		
+	</style>
+</head>
+<body>
+<div class="form">
+	<form method="POST">
+	   <label for="login">Login Form</label><br><br>
+	   <label for="email"><strong>Email:</strong></label><br>
+	   <input type="email" name="" id="email" required placeholder="Enter Email"><br><br>
+	   <label for="Password"><strong>Password:</strong></label><br>
+	   <input type="Password" name="" id="password" required autocomplete="off" placeholder="Enter Password"><br><br>
+	   <input type="checkbox" name="" checked>
+	   <label>remember me</label><br><br>
+	   <button type="submit">Login</button>
+    </form>
+</div>
+<div class="half">
+</div>
+
+	
+
+</body>
+</html>
